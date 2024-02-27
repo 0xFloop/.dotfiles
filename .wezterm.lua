@@ -33,7 +33,13 @@ config.keys = {
     mods = 'CTRL|SHIFT',
     action = wezterm.action.SplitHorizontal { domain = 'CurrentPaneDomain' },
   },
+  {
+    key = 'j',
+    mods = 'CTRL|SHIFT',
+    action = wezterm.action.ActivatePaneDirection 'Next'
+  },
 }
+
 -- for i = 1, 8 do
 --   table.insert(config.keys {
 --     key = tostring(i),
