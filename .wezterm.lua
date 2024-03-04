@@ -7,6 +7,7 @@ local config = {}
 if wezterm.config_builder then
   config = wezterm.config_builder()
 end
+
 -- How many lines of scrollback you want to retain per tab
 config.scrollback_lines = 25500
 -- This is where you actually apply your config choices
@@ -16,6 +17,9 @@ config.enable_scroll_bar = true
 config.audible_bell = 'Disabled'
 -- and finally, return the configuration to wezterm
 config.term = 'wezterm'
+
+config.initial_rows = 500
+config.initial_cols = 500
 config.keys = {
   {
     key = 'r',
