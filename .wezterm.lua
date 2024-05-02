@@ -51,5 +51,5 @@ config.keys = {
 --     action = wezterm.action.ActivateTab(i),
 --   })
 -- end
-
+--
 return config
